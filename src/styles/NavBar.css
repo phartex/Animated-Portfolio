@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.menuscroll {
+  background: black;
+}
+.nav-item a {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+@media only screen and (max-width: 600px) {
+  #navmenu {
+    background: black;
+    padding: 0em 1em;
+    margin-top: 0.8em;
+    height: 30vh;
+    border-radius: 20px;
+  }
+  .nav-item a {
+
+    font-size: 1.1em;
+  }
+  .nav-item{
+    margin-top: 1em;
+  }
+}
