@@ -52,7 +52,7 @@ const Landing = ({ setSelectedPage }) => {
                     </p>
 
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
-                        I am a self taught frontend developer with over four years of active development, more actively in the financial technology industry,
+                       A self taught frontend developer with over four years of active development, more actively in the financial technology industry,
                     </p>
                 </motion.div>
 
