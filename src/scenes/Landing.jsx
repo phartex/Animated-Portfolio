@@ -52,14 +52,14 @@ const Landing = ({ setSelectedPage }) => {
                     </p>
 
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
-                       I am a self taught software enginer with over four years of active development across different industries(financial technology, software solutionsn and ERP)
+                        I am a self taught software enginer with over four years of active development across different industries(financial technology, software solutionsn and ERP)
                     </p>
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
-                     I have experience building shippable products used by over 50,000 users daily with over 90% success rate.
-                     </p>
-                    <p className="mt-10 mb-4 text-lg text-center md:text-start">
-                    contact me on , 08104115752 or fateruvictor96@gmail.com
-                     </p>
+                        I have experience building shippable products used by over 50,000 users daily with over 90% success rate.
+                    </p>
+                    <p className="mt-5 mb-4 text-lg text-center md:text-start">
+                        contact me on , 08104115752 or fateruvictor96@gmail.com
+                    </p>
                 </motion.div>
 
                 <motion.div
