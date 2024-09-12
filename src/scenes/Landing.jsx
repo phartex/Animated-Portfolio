@@ -57,6 +57,9 @@ const Landing = ({ setSelectedPage }) => {
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
                      I have experience building shippable products used by over 50,000 users daily with over 90% success rate.
                      </p>
+                    <p className="mt-10 mb-4 text-lg text-center md:text-start">
+                    contact me on , 08104115752 or fateruvictor96@gmail.com
+                     </p>
                 </motion.div>
 
                 <motion.div
