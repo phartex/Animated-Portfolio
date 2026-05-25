@@ -22,8 +22,8 @@ const MySkills = () => {
             MY <span className='text-red'>SKILLS</span>
           </p>
           <LineGradient className='w-1/3' />
-          <p className='mt-10 m-7'>I am skilled in new and emerging technoloigies which inlcludes HTML5, CSS,tailwind css,
-            material UI, React , javascript, Angular, typescript and Angular material ui</p>
+          <p className='mt-10 m-7'>I am skilled in new and emerging technologies which includes HTML5, CSS, tailwind css,
+            material UI, React, javascript, Angular, typescript and Angular material ui. Additionally, I have expertise in data analysis and data engineering tools including Excel, Power BI, SQL, and MSSQL.</p>
 
         </motion.div>
 
@@ -49,7 +49,7 @@ const MySkills = () => {
 
       {/* skills */}
 
-      <div className='md:flex md:justfify-between mt-16 gap-32'>
+      <div className='md:flex md:justify-between mt-16 gap-32'>
         <motion.div
           className='md:w-1/3 mt-10'
           initial='hidden' whileInView='visible'
@@ -61,13 +61,13 @@ const MySkills = () => {
           }}>
           <div className='relative h-32'>
             <div className="z-10">
-              <p className='font-playfair font-semibld text-5xl'>01</p>
-              <p className='font-playfair font-semibld text-3xl mt-3'>Experience</p>
+              <p className='font-playfair font-semibold text-5xl'>01</p>
+              <p className='font-playfair font-semibold text-3xl mt-3'>Experience</p>
             </div>
             <div className='w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]' />
           </div>
-          <p className='mt-5'>I am skilled in new and emerging technoloigies which inlcludes HTML5, CSS,tailwind css,
-            material UI, React , javascript, Angular, typescript and Angular material ui</p>
+          <p className='mt-5'>I am skilled in new and emerging technologies which includes HTML5, CSS, tailwind css,
+            material UI, React, javascript, Angular, typescript and Angular material ui. I also excel in data tools such as Excel, Power BI, SQL, and MSSQL.</p>
 
         </motion.div>
 
@@ -84,13 +84,12 @@ const MySkills = () => {
           }}>
           <div className='relative h-32'>
             <div className="z-10">
-              <p className='font-playfair font-semibld text-5xl'>02</p>
-              <p className='font-playfair font-semibld text-3xl mt-3'>Innovative</p>
+              <p className='font-playfair font-semibold text-5xl'>02</p>
+              <p className='font-playfair font-semibold text-3xl mt-3'>Innovative</p>
             </div>
             <div className='w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]' />
           </div>
-          <p className='mt-5'>I am skilled in new and emerging technoloigies which inlcludes HTML5, CSS,tailwind css,
-            material UI, React , javascript, Angular, typescript and Angular material ui</p>
+          <p className='mt-5'>I constantly explore cutting-edge solutions and modern approaches to solve complex technical challenges. Whether it is optimizing database queries, building scalable React components, or creating insightful Power BI dashboards, I bring fresh perspectives and creative problem-solving to every project.</p>
 
         </motion.div>
 
@@ -116,10 +115,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            I blend technical expertise with creative vision to craft intuitive user experiences and data-driven solutions. From designing responsive web interfaces to visualizing complex datasets in meaningful ways, I transform ideas into impactful digital products that users love.
           </p>
         </motion.div>
       </div>

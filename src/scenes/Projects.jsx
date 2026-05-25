@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, linkUrl }) => {
+const Project = ({ title, linkUrl, description, imageExt = "jpg" }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -29,15 +29,14 @@ const Project = ({ title, linkUrl }) => {
   };
 
   return (
-    <motion.div variants={projectVariant} className="relative mb-2 sm:mb-0" onClick={handleProjectClick}>
+    <motion.div variants={projectVariant} className="relative mb-2 sm:mb-0 cursor-pointer" onClick={handleProjectClick}>
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
+          {description || "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt."}
         </p>
       </div>
-      <img src={`/assets/${projectTitle}.jpg`} alt={projectTitle} />
+      <img src={`/assets/${projectTitle}.${imageExt}`} alt={projectTitle} />
       {/* <img src={process.env.PUBLIC_URL + './assets/${projectTitle}.jpeg'} alt="Instagram" /> */}
       {/* <img src={example} alt={projectTitle} /> */}
     </motion.div>
@@ -90,14 +89,23 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
+          <Project title="create-div" description="A simple CLI tool for quickly scaffolding new projects with ease" linkUrl='https://www.npmjs.com/package/create-indv-next-app' imageExt="png"/>
           <Project title="aowe" linkUrl='https://ao.gtbank.com/v1/landing'/>
-          <Project title="bpp" linkUrl='https://bpphomes.com/home'/>
+          <Project title="bpp-homes" linkUrl='https://bppcompanies.com/' imageExt="png"/>
+          <Project title="optimus" linkUrl='' imageExt="png"/>
 
           {/* ROW 2 */}
-          <Project title="pepsi" linkUrl='https://pepsi-page.netlify.app/'/>
+        
           <Project title="portfolio" linkUrl=''/>
           <Project title="titan" linkUrl='https://titankids.netlify.app/'/>
 
+          {/* ROW 3 */}
+          <Project 
+            title="innovation-doc" 
+            linkUrl='https://www.npmjs.com/package/innovation-doc-gen-cli'
+            description="AI-powered documentation generator for JavaScript/TypeScript projects. Automatically generates and updates API documentation and README files using AI. Using Claude, Ollama, or OpenAI."
+            imageExt="png"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

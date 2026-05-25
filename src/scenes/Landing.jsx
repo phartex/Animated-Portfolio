@@ -52,7 +52,7 @@ const Landing = ({ setSelectedPage }) => {
                     </p>
 
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
-                        I am a self taught software enginer with over four years of active development across different industries(financial technology, software solutionsn and ERP)
+                        I am a self taught software engineer with over four years of active development across different industries (financial technology, software solutions and ERP). Beyond software engineering, I am also passionate about data analysis and data engineering, leveraging data to drive insights and build robust data pipelines.
                     </p>
                     <p className="mt-10 mb-4 text-lg text-center md:text-start">
                         I have experience building shippable products used by over 50,000 users daily with over 90% success rate.
