@@ -94,7 +94,7 @@ const Contact = () => {
             data-netlify="true"
             netlify-honeypot="bot-field"
              action="/success"
-             netlify hidden
+             
             onSubmit={handleSubmit}
           >
             {/* Hidden field for Netlify */}
