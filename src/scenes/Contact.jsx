@@ -18,13 +18,15 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = () => {
-    // Netlify handles the form submission automatically
+  const handleSubmit = (e) => {
+    // On localhost, prevent submission and show alert
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      e.preventDefault();
+      alert("Form submissions only work on the live deployed site (Netlify). Please deploy your site to test the form.");
+      return;
+    }
+    // On production (Netlify), form submits normally
     setIsSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitted(false);
-    }, 3000);
   };
 
   return (
@@ -91,8 +93,9 @@ const Contact = () => {
             method="POST" 
             data-netlify="true"
             netlify-honeypot="bot-field"
+             action="/success"
+             netlify hidden
             onSubmit={handleSubmit}
-            action="/success"
           >
             {/* Hidden field for Netlify */}
             <input type="hidden" name="form-name" value="contact" />
